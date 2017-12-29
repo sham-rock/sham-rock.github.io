@@ -1,0 +1,25 @@
+
+@font-face {font-family: "iconfont";
+  src: url('//asset.ibanquan.com/middle/33689/c/444/591e55f70689871fa5004da7/iconfont.eot?v=1501061689_1495160311'); /* IE9*/
+  src: url('//asset.ibanquan.com/middle/33689/c/444/591e55f70689871fa5004da7/iconfont.eot?v=1501061689_1495160311#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//asset.ibanquan.com/middle/33689/c/444/591e55f80689871fa5004db0/iconfont.woff?v=1501061689_1495160312') format('woff'), /* chrome, firefox */
+  url('//asset.ibanquan.com/middle/33689/c/444/591e55f70689871fa5004dad/iconfont.ttf?v=1501061689_1495160311') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//asset.ibanquan.com/middle/33689/c/444/591e55f70689871fa5004daa/iconfont.svg?v=1501061689_1495160311#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-trg-down:before { content: "\22"; }
+
+.icon-trg-right:before { content: "\21"; }
+
+.icon-hanbao:before { content: "\23"; }
+
+.icon-close:before { content: "\24"; }
