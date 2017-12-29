@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no"/>
+	<title>我要提问</title>
+	<link rel="stylesheet" href="app_css/base.css">
+	<script type="text/javascript" src="app_js/jquery-2.1.0.min.js"></script>
+</head>
+<body>
+<div class="question_content">
+	<section class="question_inputbox">
+		<div class="question_inputcnt">
+			<textarea id="question_inputcontentbox"></textarea>
+			<div class="question_defaultprop clearfix"><span></span>请输入您的问题…</div>
+		</div>
+		<div class="question_wordnum"><span>0</span>/500字</div>
+	</section>
+	<section class="question_spacing"></section>
+	<section class="question_label">
+		<div class="question_smalltitle clearfix">
+			<span></span>
+			<h6>问题标签可以快速的帮你找到回答的小伙伴哦</h6>
+		</div>
+		<ul class="question_labe_lists clearfix">
+			<li>投保查询</li>
+			<li>产品推荐</li>
+			<li>续保/退保</li>
+			<li>理赔服务</li>
+		</ul>
+	</section>
+	<section class="question_spacing"></section>
+	<section class="question_phone">
+		<div class="question_smalltitle clearfix">
+			<span></span>
+			<h6>留下您的号码，会有客服人员为您服务哦！</h6>
+		</div>
+		<div class="question_phonebox">
+			<input type="tel" maxlength="11" id="question_input_phone" name="question_input_phone" placeholder="请输入您的手机号码"/>
+		</div>
+	</section>
+	<section class="question_sumbitbox">
+		<button id="question_sumbit" class="question_bnt_gray question_bnt">提交</button>
+	</section>
+</div>
+<div class="question_fullscreen hide">
+	<div class="question_bg"></div>
+	<div class="question_layer">
+		<p>您的问题需要审核后才会显示哦！</p>
+		<button id="question_confirm">好哒！</button>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="app_js/commonPlugin.js"></script>
+<script type="text/javascript" src="app_js/StringUtils.js"></script>
+<script type="text/javascript" src="app_js/question.js" ></script>
+</html>

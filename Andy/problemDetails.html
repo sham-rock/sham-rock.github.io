@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>问题详情页</title>
+    <link rel="stylesheet" href="app_css/base.css">
+    <script type="text/javascript" src="app_js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="app_js/commonPlugin.js"></script>
+    <script type="text/javascript" src="app_js/StringUtils.js"></script>
+    <script type="text/javascript" src="./app_js/problemDetails.js"></script>
+</head>
+
+<body>
+    <header class="s-top">
+        <div class="back">
+            <a href="javascript:;"><i></i></a>
+        </div>
+        <div class="title">问答详情</div>
+        <div class="more"><i></i></div>
+    </header>
+
+    <div class="qa-comment">
+        <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="lpfw fr">投保查询</div>
+            <div class="txt">
+                <p class="t1">我在今年双十一时候买了保险，送了意外无忧险和绿色通道服务，明年续保的时候这两款赠送的还…</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-15</div>
+                <div class="like fr"><span class="like_interest"><i class="attention"></i>22人关注</span><span>|</span><span><i class="reply"></i>3人回答</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+        <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="txt">
+                <p class="t1">买个保险是很有必要的</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-15</div>
+                <div class="like">
+                    <span class="count fr"></span>
+                    <i class="attention attention-gray"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="txt">
+                <p class="t1">买个保险是很有必要的.买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的买个保险是很有必要的</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-14</div>
+                <div class="like">
+                    <span class="count fr">32</span>
+                    <i class="attention attention-blue"></i>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="txt">
+                <p class="t1">买个保险是很有必要的</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-13</div>
+                <div class="like">
+                    <span class="count fr">3</span>
+                    <i class="attention attention-blue"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="txt">
+                <p class="t1">买个保险是很有必要的</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-13</div>
+                <div class="like">
+                    <span class="count fr">3</span>
+                    <i class="attention attention-blue"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="userImg fl">
+                <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
+                <span class="tel">136****9911</span>
+            </div>
+            <div class="txt">
+                <p class="t1">买个保险是很有必要的</p>
+            </div>
+            <div class="otherInfo">
+                <div class="time fl">2017-12-13</div>
+                <div class="like">
+                    <span class="count fr">3</span>
+                    <i class="attention attention-blue"></i>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="qa-reply">
+        <div class="inner">
+            <textarea class="search" rows="20" id="" placeholder="请输入200字以内的答案…"></textarea>
+            <!--<textarea class="search" placeholder="请输入200字以内的答案…" >-->
+            <div class="text"></div>
+            <span class="magn"><i></i></span>
+            <div class="public">发布</div>
+
+        </div>
+    </div>
+    <div class="question_fullscreen hide">
+        <div class="question_bg"></div>
+        <div class="question_layer">
+            <p>您的答案已提交，需审核后显示呢</p>
+            <a href="./problemDetails.html"><button id="question_confirm">好哒！</button></a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

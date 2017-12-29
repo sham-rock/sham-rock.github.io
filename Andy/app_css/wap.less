@@ -1,0 +1,137 @@
+/**
+@size:实际大小 单位：px
+@unit:转换后有单位 默认rem
+@step:转换基数 默认32
+*/
+
+@import (reference) "css3.less";
+@import (reference) "z.less";
+@base_step:37.5;
+.width(@size,@unit:rem,@step:@base_step){
+    width: unit(@size/@step,@unit);
+}
+.max-width(@size,@unit:rem,@step:@base_step){
+    max-width: unit(@size/@step,@unit);
+}
+.height(@size,@unit:rem,@step:@base_step){
+    height: unit(@size/@step,@unit);
+}
+
+.font-size(@size,@unit:rem,@step:@base_step){
+    font-size: unit(@size/@step,@unit);
+}
+
+.left(@size,@unit:rem,@step:@base_step){
+    left: unit(@size/@step,@unit);
+}
+.right(@size,@unit:rem,@step:@base_step){
+    right: unit(@size/@step,@unit);
+}
+.bottom(@size,@unit:rem,@step:@base_step){
+    bottom: unit(@size/@step,@unit);
+}
+.top(@size,@unit:rem,@step:@base_step){
+    top: unit(@size/@step,@unit);
+}
+
+
+/**
+	padding
+*/
+.padding-top(@size,@unit:rem,@step:@base_step){
+    padding-top: unit(@size/@step,@unit);
+}
+
+.padding-bottom(@size,@unit:rem,@step:@base_step){
+    padding-bottom: unit(@size/@step,@unit);
+}
+
+.padding-left(@size,@unit:rem,@step:@base_step){
+    padding-left: unit(@size/@step,@unit);
+}
+
+.padding-right(@size,@unit:rem,@step:@base_step){
+    padding-right: unit(@size/@step,@unit);
+}
+
+.padding(@size,@unit:rem,@step:@base_step){
+    padding: unit(@size/@step,@unit);
+}
+
+.padding(@size1,@size2,@unit:rem,@step:@base_step){
+    padding: unit(@size1/@step,@unit) unit(@size2/@step,@unit);
+}
+
+.padding(@size1,@size2,@size3,@unit:rem,@step:@base_step){
+    padding: unit(@size1/@step,@unit) unit(@size2/@step,@unit) unit(@size3/@step,@unit);
+}
+
+.padding(@size1,@size2,@size3,@size4,@unit:rem,@step:@base_step){
+    padding: unit(@size1/@step,@unit) unit(@size2/@step,@unit) unit(@size3/@step,@unit) unit(@size4/@step,@unit);
+}
+/**
+	margin
+*/
+.margin-top(@size,@unit:rem,@step:@base_step){
+    margin-top: unit(@size/@step,@unit);
+}
+
+.margin-bottom(@size,@unit:rem,@step:@base_step){
+    margin-bottom: unit(@size/@step,@unit);
+}
+
+.margin-left(@size,@unit:rem,@step:@base_step){
+    margin-left: unit(@size/@step,@unit);
+}
+
+.margin-right(@size,@unit:rem,@step:@base_step){
+    margin-right: unit(@size/@step,@unit);
+}
+
+.margin(@size,@unit:rem,@step:@base_step){
+    margin: unit(@size/@step,@unit);
+}
+
+.margin(@size1,@size2,@unit:rem,@step:@base_step){
+    margin: unit(@size1/@step,@unit) unit(@size2/@step,@unit);
+}
+
+.margin(@size1,@size2,@size3,@unit:rem,@step:@base_step){
+    margin: unit(@size1/@step,@unit) unit(@size2/@step,@unit) unit(@size3/@step,@unit);
+}
+
+.margin(@size1,@size2,@size3,@size4,@unit:rem,@step:@base_step){
+    margin: unit(@size1/@step,@unit) unit(@size2/@step,@unit) unit(@size3/@step,@unit) unit(@size4/@step,@unit);
+}
+
+.border(@size,@color:#000,@shape:solid,@unit:rem,@step:@base_step){
+    border: unit(@size/@step,@unit) @shape @color;
+}
+.border-radius(@size1,@size2,@size3,@size4,@unit:rem,@step:@base_step){
+    border-radius: unit(@size1/@step,@unit) unit(@size2/@step,@unit) unit(@size3/@step,@unit) unit(@size4/@step,@unit);
+}
+.border-radius(@size,@unit:rem,@step:@base_step){
+    border-radius: unit(@size/@step,@unit);
+}
+.border-right(@size,@color:#000,@shape:solid,@unit:rem,@step:@base_step){
+    border-right: unit(@size/@step,@unit) @shape @color;
+}
+
+.border-bottom(@size,@color:#000,@shape:solid,@unit:rem,@step:@base_step){
+    border-bottom: unit(@size/@step,@unit) @shape @color;
+}
+
+
+.line-height(@size,@unit:rem,@step:@base_step){
+    line-height: unit(@size/@step,@unit);
+}
+
+.text-indent(@size,@unit:rem,@step:@base_step){
+    text-indent: unit(@size/@step,@unit);
+}
+.top(@size,@unit:rem,@step:@base_step){
+    top: unit(@size/@step,@unit);
+}
+.background-size(@size1,@size2,@unit:rem,@step:@base_step){
+    background-size:  unit(@size1/@step,@unit) unit(@size2/@step,@unit);
+}
