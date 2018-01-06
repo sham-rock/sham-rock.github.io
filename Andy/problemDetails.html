@@ -145,7 +145,13 @@
             <a href="./problemDetails.html"><button id="question_confirm">好哒！</button></a>
         </div>
     </div>
-
+<script>
+    $(".search").on("click",function(){
+    var t = $(".feedback").offset().top;
+        var h = $(".feedback").height();
+        $("body,html").animate({"scrollTop",t},h);
+    })
+</script>
 
 
 </body>
