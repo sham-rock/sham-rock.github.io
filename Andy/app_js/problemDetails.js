@@ -2,7 +2,7 @@
  * Created by EX-ZHANGCHAOCHENG001 on 2017/12/21.
  */
 $(function() {
-    // replyPublic();
+    replyPublic();
     clickQuiz();
     ssQuiz();
     //������һҳ
