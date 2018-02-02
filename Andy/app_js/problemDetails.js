@@ -83,20 +83,20 @@ target.scrollIntoView(true);
 
 }
 //�7�8����
-function clickQuiz() {
-    $(".qa-comment .item").each(function() {
-        $(this).find("span.like_interest").off("touchstart");
-        $(this).find("span.like_interest").on("touchstart", function() {
-            if ($(this).hasClass("blue-act")) {
-                $(this).removeClass("blue-act");
-                $(this).children(".attention").removeClass("attention-blue");
-            } else {
-                $(this).addClass("blue-act");
-                $(this).children(".attention").addClass("attention-blue");
-            }
-        });
-    });
-}
+// function clickQuiz() {
+//     $(".qa-comment .item").each(function() {
+//         $(this).find("span.like_interest").off("touchstart");
+//         $(this).find("span.like_interest").on("touchstart", function() {
+//             if ($(this).hasClass("blue-act")) {
+//                 $(this).removeClass("blue-act");
+//                 $(this).children(".attention").removeClass("attention-blue");
+//             } else {
+//                 $(this).addClass("blue-act");
+//                 $(this).children(".attention").addClass("attention-blue");
+//             }
+//         });
+//     });
+// }
 //����ͼ�����
 
 function ssQuiz() {
