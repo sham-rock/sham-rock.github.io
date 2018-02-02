@@ -23,23 +23,23 @@ function replyPublic() {
     var $btn = $(".qa-reply .public");
     var $searchtext = $(".qa-reply .text")
     var timer = null;
-    // $fb.keyup(function() {
-    //     if ($.trim($fb.val()) == '') {
-    //         console.log(1);
-    //         $btn.addClass("fb-gray").removeClass("fb-blue").siblings("span").addClass("magn");
-    //         $fb.css("text-indent", "1.7rem");
-    //     } else {
-    //         $btn.addClass("fb-blue").removeClass("fb-gray").siblings("span").removeClass("magn");
-    //         $fb.css({
-    //             "text-indent": "0",
-    //             // "height": "1.6rem"
-    //         });
-    //     }
+    $fb.keyup(function() {
+        if ($.trim($fb.val()) == '') {
+            console.log(1);
+            $btn.addClass("fb-gray").removeClass("fb-blue").siblings("span").addClass("magn");
+            $fb.css("text-indent", "1.7rem");
+        } else {
+            $btn.addClass("fb-blue").removeClass("fb-gray").siblings("span").removeClass("magn");
+            $fb.css({
+                "text-indent": "0",
+                // "height": "1.6rem"
+            });
+        }
 
-// var target = this;
-// setTimeOut(function() {
-// target.scrollIntoView(true);
-// }, 100);
+var target = this;
+setTimeOut(function() {
+target.scrollIntoView(true);
+}, 100);
 
         // timer = setInterval(function() {
         //     // console.log($fb.val());
@@ -111,18 +111,3 @@ function ssQuiz() {
         });
     });
 }
-
-
-// <body> <div class="bottom"> <input class="aInput" type="text" placeholder="ios聚焦后会被输入法遮挡" />
-// <input class="bInput" type="text" placeholder="ios聚焦后不会被输入法遮挡" /> </div> </body> 
- $(function() { 
-// 解决输入法遮挡 
-var timer = null; 
-$('.bInput').on('focus', function() { 
-    clearInterval(timer);
- var index = 0; 
- timer = setInterval(function() { 
-    if(index>5) { 
-        $('body').scrollTop(1000000);
-         clearInterval(timer); 
-    } index++; }, 50) }) }); 
