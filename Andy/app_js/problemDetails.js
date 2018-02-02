@@ -36,10 +36,17 @@ function replyPublic() {
             });
         }
 
-var target = this;
-setTimeOut(function() {
-target.scrollIntoView(true);
-}, 100);
+// var target = this;
+// setTimeOut(function() {
+// target.scrollIntoView(true);
+// }, 100);
+
+setTimeout(() => {
+let input = $fb ;
+input.scrollIntoView(true);
+input.scrollIntoViewIfNeeded();
+}, 200);
+}
 
         // timer = setInterval(function() {
         //     // console.log($fb.val());
