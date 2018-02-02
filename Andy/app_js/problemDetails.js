@@ -46,7 +46,7 @@ let input = $fb ;
 input.scrollIntoView(true);
 input.scrollIntoViewIfNeeded();
 }, 200);
-}
+
 
         // timer = setInterval(function() {
         //     // console.log($fb.val());
