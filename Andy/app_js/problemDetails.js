@@ -27,13 +27,8 @@ function replyPublic() {
         if ($.trim($fb.val()) == '') {
             console.log(1);
             $btn.addClass("fb-gray").removeClass("fb-blue").siblings("span").addClass("magn");
-            // $fb.css("text-indent", "1.7rem");
         } else {
             $btn.addClass("fb-blue").removeClass("fb-gray").siblings("span").removeClass("magn");
-            $fb.css({
-                // "text-indent": "0",
-                // "height": "1.6rem"
-            });
         }
 
         // var target = this;
@@ -46,28 +41,6 @@ function replyPublic() {
         // input.scrollIntoView(true);
         // input.scrollIntoViewIfNeeded();
         // }, 200);
-
-
-        // timer = setInterval(function() {
-        //     // console.log($fb.val());
-        //     var h = $searchtext.text($fb.val()).height();
-        //     console.log(h);
-        //     if (parseInt(h) > 20 && parseInt(h) < 80) {
-        //         $fb.css({
-        //             "height": h
-        //         })
-        //     } else if (parseInt(h) > 80) {
-        //         $fb.css({
-        //             "height": "76px"
-        //         })
-        //     } else {
-        //         $fb.css({
-        //             "height": "1.6rem"
-        //         });
-        //     }
-
-
-        // }, 800)
     });
 
     $btn.off("touchstart");
