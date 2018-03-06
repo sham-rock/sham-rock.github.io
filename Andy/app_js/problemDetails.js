@@ -36,16 +36,28 @@ function replyPublic() {
             });
         }
 
-// var target = this;
-// setTimeOut(function() {
-// target.scrollIntoView(true);
-// }, 100);
+        // var target = this;
+        // setTimeOut(function() {
+        // target.scrollIntoView(true);
+        // }, 100);
+        var u = navigator.userAgent,
+            app = navigator.appVersion;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isiOS) {
+            var $fb = $(".qa-reply .search");
+            $('textarea').focus(function() {
+                window.setTimeout('scrollBottom()', 500);
+            });
+        }
 
-setTimeout(() => {
-let input = $fb ;
-input.scrollIntoView(true);
-input.scrollIntoViewIfNeeded();
-}, 200);
+        function scrollBottom() {
+            window.scrollTo(0, $('body').height());
+        }
+        // setTimeout(() => {
+        // let input = $fb ;
+        // input.scrollIntoView(true);
+        // input.scrollIntoViewIfNeeded();
+        // }, 200);
 
 
         // timer = setInterval(function() {
