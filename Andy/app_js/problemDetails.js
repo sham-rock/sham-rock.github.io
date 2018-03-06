@@ -40,18 +40,7 @@ function replyPublic() {
         // setTimeOut(function() {
         // target.scrollIntoView(true);
         // }, 100);
-        var u = navigator.userAgent,
-            app = navigator.appVersion;
-        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-        if (isiOS) {
-            $fb.focus(function() {
-                window.setTimeout('scrollBottom()', 500);
-            });
-        }
 
-        function scrollBottom() {
-            window.scrollTo(0, $('body').height());
-        }
         // setTimeout(() => {
         // let input = $fb ;
         // input.scrollIntoView(true);
@@ -128,4 +117,16 @@ function ssQuiz() {
             }
         });
     });
+}
+var u = navigator.userAgent,
+    app = navigator.appVersion;
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if (isiOS) {
+    $(".qa-reply .search").focus(function() {
+        window.setTimeout('scrollBottom()', 500);
+    });
+}
+
+function scrollBottom() {
+    window.scrollTo(0, $('body').height());
 }
