@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <!--   <header class="s-top">
+    <!--   <header class="s-top">
         <div class="back">
             <a href="javascript:;"><i></i></a>
         </div>
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-<!--         <div class="item">
+        <!--         <div class="item">
             <div class="userImg fl">
                 <i class="uImg"><img src="./app_images/user1.png" alt=""/></i>
                 <span class="tel">136****9911</span>
@@ -133,7 +133,7 @@
             <textarea class="search bInput" rows="20" id="" placeholder="请输入200字以内的答案…"></textarea>
             <!--<textarea class="search" placeholder="请输入200字以内的答案…" >-->
             <div class="text"></div>
-            <span class="magn"><i></i></span>
+            <!-- <span class="magn"><i></i></span> -->
             <div class="public">发布</div>
 
         </div>
@@ -145,13 +145,15 @@
             <a href="./problemDetails.html"><button id="question_confirm">好哒！</button></a>
         </div>
     </div>
-<script>
-    $(".search").on("click",function(){
-    var t = $(".feedback").offset().top;
-        var h = $(".feedback").height();
-        $("body,html").animate({"scrollTop":t},h);
-    })
-</script>
+    <script>
+        $(".search").on("click", function() {
+            var t = $(".feedback").offset().top;
+            var h = $(".feedback").height();
+            $("body,html").animate({
+                "scrollTop": t
+            }, h);
+        })
+    </script>
 
 
 </body>
