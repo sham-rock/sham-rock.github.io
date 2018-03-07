@@ -29,11 +29,11 @@ var quote = {
     mySwiper: function() {
         var swipe = new Swiper("#banner", {
             //direction:"vertical",
-            loop: false,
+            loop: true,
             // autoplay: 3000,
             pagination: ".swiper-pagination",
             speed: 500,
-            initialSlidw: 2,
+            initialSlidw: 0,
             autoplayDisableOninteraction: true
         })
     },
