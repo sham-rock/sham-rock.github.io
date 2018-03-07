@@ -29,7 +29,7 @@ var quote = {
     mySwiper: function() {
         var swipe = new Swiper("#banner", {
             //direction:"vertical",
-            loop: true,
+            // loop: true,
             autoplay: 3000,
             pagination: ".swiper-pagination",
             speed: 500,
