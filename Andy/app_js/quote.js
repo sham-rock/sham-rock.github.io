@@ -29,12 +29,12 @@ var quote = {
     mySwiper: function() {
         var swipe = new Swiper("#banner", {
             //direction:"vertical",
-            loop: true,
-            // autoplay: 3000,
+            // loop: true,
+            autoplay: 3000,
             pagination: ".swiper-pagination",
             speed: 500,
             initialSlidw: 0,
-            autoplayDisableOninteraction: true
+            autoplayDisableOnInteraction: false
         })
     },
     clickQuiz: function() {
