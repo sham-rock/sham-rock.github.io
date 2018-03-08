@@ -2,7 +2,6 @@
  * Created by EX-ZHANGCHAOCHENG001 on 2017/12/21.
  */
 $(function() {
-    var $fb = $(".qa-reply .search");
     replyPublic();
     clickQuiz();
     ssQuiz();
@@ -23,14 +22,14 @@ $(function() {
     console.log(windowH)
 
     if (isIOS) {
-        $(".qa-reply").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域
+        $(".qa-reply .inner").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域
             // 聚焦后窗口的高度 
             var windowH1 = $(window).height();
             console.log(windowH1)
             $fb.css({ "position": "absolute", "bottom": windowH1 - windowH });
 
         }).on('blur', 'input', function() {
-            $fb.css({ "position": "fixed", "bottom": 0 });
+            $(".qa-reply .inner").css({ "position": "fixed", "bottom": 0 });
 
         });
 
