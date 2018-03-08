@@ -27,15 +27,22 @@ var quote = {
         quote.clickQuiz();
     },
     mySwiper: function() {
-        var swipe = new Swiper("#banner", {
+        var swiper = new Swiper("#banner", {
             //direction:"vertical",
-            // loop: true,
+            loop: true,
             autoplay: 3000,
             pagination: ".swiper-pagination",
             speed: 500,
             initialSlidw: 0,
-            autoplayDisableOnInteraction: false
+            autoplayDisableOnInteraction: false,
+            observer: true,
+            observeParents: true
+                // onSlideChangeStart: function(swiper) {
+                //     swiper.realIndex = $(".swiper-pagination-bullet-active").index()
+                //         // console.log(swiper.realIndex)
+                // }
         })
+        console.log(swiper)
     },
     clickQuiz: function() {
         $(".s-comment .item").each(function() {
