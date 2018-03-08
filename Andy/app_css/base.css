@@ -969,13 +969,12 @@ input::-webkit-input-placeholder {
 .qa-reply .inner {
   width: 100%;
   padding: 0.4rem;
-  position: relative;
-  bottom: 0;
   background: #F1F1F1;
 }
 .qa-reply .inner .search {
   width: 15.2rem;
   height: 1.6rem;
+  line-height: 0.8rem;
   margin-top: 0.26666667rem;
   margin-left: 0.4rem;
   font-size: 0.74666667rem;

@@ -12,7 +12,7 @@ $(function() {
             "margin-bottom": qr
         })
         //修复ios输入框获取焦点时不支持fixed的bug
-    console.log(navigator.appVersion)
+        // console.log(navigator.appVersion)
         // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
         // //窗口高度
         // var windowH = $(window).height();
