@@ -962,12 +962,14 @@ input::-webkit-input-placeholder {
   right: 0.16rem;
 }
 .qa-reply {
-  position: relative;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 .qa-reply .inner {
   width: 100%;
   padding: 0.4rem;
-  position: fixed;
+  position: relative;
   bottom: 0;
   background: #F1F1F1;
 }
