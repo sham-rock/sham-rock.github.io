@@ -26,6 +26,7 @@ var quote = {
         quote.mySwiper();
         quote.clickQuiz();
     },
+    // 如果图片时动态加载的,那么需要在图片加载之后初始化swiper插件
     mySwiper: function() {
         var swiper = new Swiper("#banner", {
             //direction:"vertical",
@@ -37,12 +38,7 @@ var quote = {
             autoplayDisableOnInteraction: false,
             observer: true,
             observeParents: true
-                // onSlideChangeStart: function(swiper) {
-                //     swiper.realIndex = $(".swiper-pagination-bullet-active").index()
-                //         // console.log(swiper.realIndex)
-                // }
         })
-        console.log(swiper)
     },
     clickQuiz: function() {
         $(".s-comment .item").each(function() {
