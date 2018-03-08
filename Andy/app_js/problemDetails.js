@@ -36,7 +36,7 @@ $(function() {
     // }
     $("#ipt").on('focus', function() { //js_wrap是中间含有文本框的区域
             console.log(222)
-            var target = $(this);
+            var target = $("#ipt");
             setTimeOut(function() {
                 target.scrollIntoView(true);
             }, 100);
