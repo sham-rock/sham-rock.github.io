@@ -6,27 +6,26 @@ $(function() {
     clickQuiz();
     ssQuiz();
     //������һҳ
-    $(".s-top>.back").click(function() {
-        history.back();
-    })
     var qr = $(".inner").height();
     //console.log(qr)
     $(".feedback").css({
             "margin-bottom": qr
         })
         //修复ios输入框获取焦点时不支持fixed的bug
-
-    // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
-    // //窗口高度
-    // var windowH = $(window).height();
-    // console.log(windowH)
+    console.log(navigator.appVersion)
+        // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
+        // //窗口高度
+        // var windowH = $(window).height();
+        // console.log(windowH)
 
     // if (isIOS) {
     //     $(".qa-reply .inner").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域
-    //         // 聚焦后窗口的高度 
-    //         var windowH1 = $(window).height();
-    //         console.log(windowH1)
-    //         $fb.css({ "position": "absolute", "bottom": 0 });
+    //         // 聚焦后窗口的高度  
+    // setTimeOut(function() {
+    //     var windowH1 = $(window).height();
+    //             console.log(windowH1)
+    // }, 100);
+    //         $fb.css({ "position": "absolute", "bottom":window-windowH1 });
 
     //     }).on('blur', 'input', function() {
     //         $(".qa-reply .inner").css({ "position": "fixed", "bottom": 0 });
@@ -34,17 +33,23 @@ $(function() {
     //     });
 
     // }
-    $("#ipt").on('focus', function() { //js_wrap是中间含有文本框的区域
-            console.log(222)
-            var target = $("#ipt");
-            setTimeOut(function() {
-                target.scrollIntoView(true);
-            }, 100);
+    $("#ipt").on('focus', function() {
+        console.log(222)
+        var target = $(".qa-reply .inner");
+        setTimeout(function() {
+            // target.scrollIntoView(true);
+            target.animate({ scrollTop: target.offset().top + 100000 }, 1000);
+        }, 100);
 
-        })
-        // setTimeout(function() {
-        //     document.body.scrollTop = document.body.scrollHeight;
-        // }, 300);
+    })
+
+    // $("#msgShow").animate({scrollTop:$("#msgRear").offset().top+100000}, 1000);
+
+    // setTimeout(function() {
+    //     // document.body.scrollTop = document.body.scrollHeight;
+    //     console.log(document.body.scrollTop)
+    //     console.log(document.body.scrollHeight)
+    // }, 300);
 });
 
 //����ظ�����
@@ -58,14 +63,6 @@ function replyPublic() {
         } else {
             $btn.addClass("fb-blue").removeClass("fb-gray").siblings("span").removeClass("magn");
         }
-
-
-
-        // setTimeout(() => {
-        // let input = $fb ;
-        // input.scrollIntoView(true);
-        // input.scrollIntoViewIfNeeded();
-        // }, 200);
     });
 
     $btn.off("touchstart");
