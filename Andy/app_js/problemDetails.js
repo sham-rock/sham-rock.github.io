@@ -2,6 +2,7 @@
  * Created by EX-ZHANGCHAOCHENG001 on 2017/12/21.
  */
 $(function() {
+    var $fb = $(".qa-reply .search");
     replyPublic();
     clickQuiz();
     ssQuiz();
@@ -12,11 +13,31 @@ $(function() {
     var qr = $(".inner").height();
     //console.log(qr)
     $(".feedback").css({
-        "margin-bottom": qr
-    })
+            "margin-bottom": qr
+        })
+        //修复ios输入框获取焦点时不支持fixed的bug
 
+    var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
+    //窗口高度
+    var windowH = $(window).height();
+    console.log(windowH)
+
+    if (isIOS) {
+        $(".qa-reply").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域
+            // 聚焦后窗口的高度 
+            var windowH1 = $(window).height();
+            console.log(windowH1)
+            $fb.css({ "position": "absolute", "bottom": windowH1 - windowH });
+
+        }).on('blur', 'input', function() {
+            $fb.css({ "position": "fixed", "bottom": 0 });
+
+        });
+
+    }
 
 });
+
 //����ظ�����
 function replyPublic() {
     var $fb = $(".qa-reply .search");
@@ -90,16 +111,4 @@ function ssQuiz() {
             }
         });
     });
-}
-var u = navigator.userAgent,
-    app = navigator.appVersion;
-var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-if (isiOS) {
-    $(".qa-reply .search").focus(function() {
-        window.setTimeout('scrollBottom()', 500);
-    });
-}
-
-function scrollBottom() {
-    window.scrollTo(0, $('body').height());
 }
