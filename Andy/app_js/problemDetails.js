@@ -26,7 +26,7 @@ $(function() {
             // 聚焦后窗口的高度 
             var windowH1 = $(window).height();
             console.log(windowH1)
-            $fb.css({ "position": "absolute", "bottom": windowH1 - windowH });
+            $fb.css({ "position": "absolute", "bottom": 0 });
 
         }).on('blur', 'input', function() {
             $(".qa-reply .inner").css({ "position": "fixed", "bottom": 0 });
