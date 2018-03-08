@@ -34,9 +34,17 @@ $(function() {
     //     });
 
     // }
-    setTimeout(function() {
-        document.body.scrollTop = document.body.scrollHeight;
-    }, 300);
+    $("#ipt").on('focus', function() { //js_wrap是中间含有文本框的区域
+            console.log(222)
+            var target = $(this);
+            setTimeOut(function() {
+                target.scrollIntoView(true);
+            }, 100);
+
+        })
+        // setTimeout(function() {
+        //     document.body.scrollTop = document.body.scrollHeight;
+        // }, 300);
 });
 
 //����ظ�����
@@ -51,10 +59,7 @@ function replyPublic() {
             $btn.addClass("fb-blue").removeClass("fb-gray").siblings("span").removeClass("magn");
         }
 
-        // var target = this;
-        // setTimeOut(function() {
-        // target.scrollIntoView(true);
-        // }, 100);
+
 
         // setTimeout(() => {
         // let input = $fb ;
