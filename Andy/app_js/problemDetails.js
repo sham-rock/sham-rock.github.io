@@ -35,16 +35,14 @@ $(function() {
     // }
     //获取页面的高度
     var windowH = $(document).height();
-    $("#ipt").on('focus', function() {
-        console.log(222)
+    $("#ipt").on('click', function() {
+        // console.log(222)
         var h = $(".qa-reply").height();
         $('body,html').scrollTop(windowH - h);
         // var target = $(this);
+        // console.log(target)
         // setTimeout(function() {
-        // target.scrollIntoView(true);
-        // target.scrollTop() = -1000;
-        //    document.body.scrollTop = 100
-        // target.animate({ "scrollTop": target.offset().top + 100000 }, 1000);
+        //     target.scrollIntoView(true);
         // }, 300);
 
     })
