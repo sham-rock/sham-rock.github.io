@@ -964,7 +964,6 @@ input::-webkit-input-placeholder {
 .qa-reply {
   width: 100%;
   position: absolute;
-  bottom: 0;
 }
 .qa-reply .inner {
   width: 100%;
