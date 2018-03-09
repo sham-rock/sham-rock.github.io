@@ -9,7 +9,7 @@ $(function() {
     var qr = $(".qa-reply").height();
     // //console.log(qr)
     var windowH = $(window).height();
-    console.log(windowH)
+    // console.log(windowH)
     $(".problemDetails").css({
             "padding-bottom": qr,
             "height": windowH
