@@ -6,30 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style lang="">
-        html,
-        body {
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            box-sizing: border-box;
             height: 100%;
-            margin: 0px;
-            padding: 0px;
-            overflow: auto;
-        }
-        
-        header {
-            height: 100px;
-            width: 100%;
-            background-color: red;
-            position: absolute;
-        }
-        
-        main {
-            width: 100%;
+            padding-bottom: 100px;
+            overflow: scroll;
             background-color: skyblue;
-            padding: 100px 0;
+        }
+        
+        .box div {
             height: 1000px;
+            background-color: red;
+            width: 80%;
         }
         
         footer {
-            height: 50px;
+            height: 100px;
             width: 100%;
             background-color: blue;
             position: absolute;
@@ -43,10 +40,12 @@
 </head>
 
 <body>
-    <header>头部</header>
-    <main>
-        内容区域
-    </main>
+    <div class="box">
+
+        <div>
+            11111111111111 11
+        </div>
+    </div>
     <footer><input id="ipt" type="text"></footer>
 </body>
 <script>
