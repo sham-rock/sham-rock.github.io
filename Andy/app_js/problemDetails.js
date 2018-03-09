@@ -38,14 +38,14 @@ $(function() {
     $("#ipt").on('focus', function() {
         console.log(222)
         var h = $(this).height();
-        $('body,html').animate({ 'scrollTop': target.offset().top + 100000 }, 100)
-            // var target = $(this);
-            // setTimeout(function() {
-            // target.scrollIntoView(true);
-            // target.scrollTop() = -1000;
-            //    document.body.scrollTop = 100
-            // target.animate({ "scrollTop": target.offset().top + 100000 }, 1000);
-            // }, 300);
+        $('body,html').scrollTop(windowH);
+        // var target = $(this);
+        // setTimeout(function() {
+        // target.scrollIntoView(true);
+        // target.scrollTop() = -1000;
+        //    document.body.scrollTop = 100
+        // target.animate({ "scrollTop": target.offset().top + 100000 }, 1000);
+        // }, 300);
 
     })
 
