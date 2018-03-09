@@ -6,17 +6,17 @@ $(function() {
     clickQuiz();
     ssQuiz();
     //������һҳ
-    // var qr = $(".inner").height();
+    var qr = $(".inner").height();
     // //console.log(qr)
-    // $(".feedback").css({
-    //         "margin-bottom": qr
-    //     })
-    //修复ios输入框获取焦点时不支持fixed的bug
-    // console.log(navigator.appVersion)
-    // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
-    // //窗口高度
-    // var windowH = $(window).height();
-    // console.log(windowH)
+    $(".feedback").css({
+            "margin-bottom": qr
+        })
+        //修复ios输入框获取焦点时不支持fixed的bug
+        // console.log(navigator.appVersion)
+        // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
+        // //窗口高度
+        // var windowH = $(window).height();
+        // console.log(windowH)
 
     // if (isIOS) {
     //     $(".qa-reply .inner").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域
@@ -34,18 +34,18 @@ $(function() {
 
     // }
     //获取页面的高度
-    var windowH = $(document).height();
-    $("#ipt").on('focus', function() {
-        // //     console.log(222)
-        // var h = $(".qa-reply").height();
-        // $('body,html').scrollTop(windowH + h);
-        // var target = $(this);
-        // console.log(target)
-        // setTimeout(function() {
-        //     target.scrollIntoView(true);
-        // }, 300);
+    // var windowH = $(document).height();
+    // $("#ipt").on('focus', function() {
+    // //     console.log(222)
+    // var h = $(".qa-reply").height();
+    // $('body,html').scrollTop(windowH + h);
+    // var target = $(this);
+    // console.log(target)
+    // setTimeout(function() {
+    //     target.scrollIntoView(true);
+    // }, 300);
 
-    })
+    // })
 
     // $("#msgShow").animate({scrollTop:$("#msgRear").offset().top+100000}, 1000);
 
