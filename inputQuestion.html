@@ -49,5 +49,18 @@
     </main>
     <footer><input id="ipt" type="text"></footer>
 </body>
+<script>
+    $("#ipt").on('focus', function() {
+        // //     console.log(222)
+        // var h = $(".qa-reply").height();
+        // $('body,html').scrollTop(windowH + h);
+        var target = $(this);
+        // console.log(target)
+        setTimeout(function() {
+            target.scrollIntoView(true);
+        }, 300);
+
+    })
+</script>
 
 </html>
