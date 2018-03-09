@@ -38,7 +38,7 @@ $(function() {
     $("#ipt").on('focus', function() {
         console.log(222)
         var h = $(this).height();
-        $('body,html').animate({ 'scrollTop': windowH - h }, 100)
+        $('body,html').animate({ 'scrollTop': target.offset().top + 100000 }, 100)
             // var target = $(this);
             // setTimeout(function() {
             // target.scrollIntoView(true);
