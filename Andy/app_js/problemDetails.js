@@ -37,8 +37,8 @@ $(function() {
     var windowH = $(document).height();
     $("#ipt").on('focus', function() {
         console.log(222)
-        var h = $(this).height();
-        $('body,html').scrollTop(windowH);
+        var h = $(".qa-reply").height();
+        $('body,html').scrollTop(windowH - h);
         // var target = $(this);
         // setTimeout(function() {
         // target.scrollIntoView(true);
