@@ -37,9 +37,10 @@ $(function() {
         console.log(222)
         var target = $(this);
         setTimeout(function() {
-            target.scrollIntoView(true);
+            // target.scrollIntoView(true);
+            document.body.scrollTop = document.body.scrollHeight;
             // target.animate({ scrollTop: target.offset().top + "100000px" }, 1000);
-        }, 100);
+        }, 300);
 
     })
 
