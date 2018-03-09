@@ -33,14 +33,19 @@ $(function() {
     //     });
 
     // }
+    //获取页面的高度
+    var windowH = $(document).height();
     $("#ipt").on('focus', function() {
         console.log(222)
-        var target = $(this);
-        setTimeout(function() {
+        var h = $(this).height();
+        $('body,html').animate({ 'scrollTop': windowH - h }, 100)
+            // var target = $(this);
+            // setTimeout(function() {
             // target.scrollIntoView(true);
-            document.body.scrollTop = document.body.scrollHeight;
-            // target.animate({ scrollTop: target.offset().top + "100000px" }, 1000);
-        }, 300);
+            // target.scrollTop() = -1000;
+            //    document.body.scrollTop = 100
+            // target.animate({ "scrollTop": target.offset().top + 100000 }, 1000);
+            // }, 300);
 
     })
 
