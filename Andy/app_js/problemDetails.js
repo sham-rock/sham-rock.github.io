@@ -45,11 +45,11 @@ $(function() {
 
     // $("#msgShow").animate({scrollTop:$("#msgRear").offset().top+100000}, 1000);
 
-    // setTimeout(function() {
-    //     // document.body.scrollTop = document.body.scrollHeight;
-    //     console.log(document.body.scrollTop)
-    //     console.log(document.body.scrollHeight)
-    // }, 300);
+    setTimeout(function() {
+        document.body.scrollTop = document.body.scrollHeight;
+        // console.log(document.body.scrollTop)
+        // console.log(document.body.scrollHeight)
+    }, 300);
 });
 
 //����ظ�����
