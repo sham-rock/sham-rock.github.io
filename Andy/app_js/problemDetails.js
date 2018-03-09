@@ -6,17 +6,17 @@ $(function() {
     clickQuiz();
     ssQuiz();
     //������һҳ
-    var qr = $(".inner").height();
+    // var qr = $(".inner").height();
     // //console.log(qr)
-    $(".feedback").css({
-            "margin-bottom": qr
-        })
-        //修复ios输入框获取焦点时不支持fixed的bug
-        // console.log(navigator.appVersion)
-        // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
-        // //窗口高度
-        // var windowH = $(window).height();
-        // console.log(windowH)
+    // $(".feedback").css({
+    //         "margin-bottom": qr
+    //     })
+    //修复ios输入框获取焦点时不支持fixed的bug
+    // console.log(navigator.appVersion)
+    // var isIOS = (/iphone|ipad/gi).test(navigator.appVersion);
+    // //窗口高度
+    // var windowH = $(window).height();
+    // console.log(windowH)
 
     // if (isIOS) {
     //     $(".qa-reply .inner").on('focus', 'input', function() { //js_wrap是中间含有文本框的区域

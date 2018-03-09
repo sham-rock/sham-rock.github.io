@@ -968,6 +968,7 @@ input::-webkit-input-placeholder {
 }
 .qa-reply .inner {
   width: 100%;
+  height: 3.41333333rem;
   padding: 0.4rem;
   background: #F1F1F1;
 }
