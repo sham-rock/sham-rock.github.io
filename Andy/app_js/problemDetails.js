@@ -35,10 +35,10 @@ $(function() {
     // }
     //获取页面的高度
     var windowH = $(document).height();
-    $("#ipt").on('click', function() {
-        // console.log(222)
+    $("#ipt").on('focus', function() {
+        console.log(222)
         var h = $(".qa-reply").height();
-        $('body,html').scrollTop(windowH - h);
+        $('body,html').scrollTop(windowH);
         // var target = $(this);
         // console.log(target)
         // setTimeout(function() {
