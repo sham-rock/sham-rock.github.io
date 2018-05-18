@@ -7,7 +7,7 @@ $(function() {
         $(this).siblings('.btn').hide();
         $(this).css({ 'width': '18.4rem' });
     })
-    $('.sp-search .warp').on('blus', function() {
+    $('.sp-search .warp').on('blur', function() {
         $(this).siblings('.btn').show();
         $(this).css({ 'width': '15.46666667rem' });
     })
