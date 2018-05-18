@@ -739,6 +739,9 @@ input::-webkit-input-placeholder {
   color: #43A1FF;
 }
 /* 问答详情 problemDetails */
+.qa-comment {
+  padding-top: 0.8rem;
+}
 .qa-comment .item {
   padding: 0.8rem;
   border-bottom: 0.53333333rem solid #efeff4;
@@ -964,6 +967,7 @@ input::-webkit-input-placeholder {
 .qa-reply {
   width: 100%;
   position: absolute;
+  bottom: 0;
 }
 .qa-reply .inner {
   width: 100%;
