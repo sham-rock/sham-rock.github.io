@@ -408,14 +408,6 @@ body {
     z-index: -1;
 }
 
-#header-title {
-    text-align: center;
-    height: 40px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -20px;
-}
 
 #logo,
 #subtitle {
@@ -449,7 +441,7 @@ body {
 .nav-icon,
 .main-nav-link {
     float: left;
-    color: #fff;
+    color: #000;
     opacity: 0.6;
     text-decoration: none;
     text-shadow: 0 1px rgba(0, 0, 0, 0.2);
